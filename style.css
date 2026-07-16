@@ -1,0 +1,189 @@
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("images/clarinet-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0 0 16px;
+    font-size: 4em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+}
+
+header nav ul li {
+    margin: 0;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+header ol li {
+    display: flex;
+    align-items: center;
+}
+
+header ol li:not(:last-child)::after {
+    content: "›";
+    margin-left: 8px;
+    color: #333;
+}
+
+header ol li a {
+    color: #333;
+    text-decoration: underline;
+}
+
+main h2 {
+    text-align: center;
+}
+
+
+main table {
+    border-collapse: collapse;
+    margin: 40px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+main table th,
+main table td {
+    border-bottom: 1px solid #333;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+main table th {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main table .date {
+    width: 140px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+main table tr:has(.highlight) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.highlight {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: yellow;
+}
+
+#history {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#history p {
+    max-width: 50%;
+    text-align: left;
+    margin: 0 0 20px;
+}
+
+#history .clarinet-photo {
+    float: right;
+    clear: right;
+    width: 220px;
+    margin: 0 0 20px 20px;
+    text-align: center;
+}
+
+#history .clarinet-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+#history .clarinet-photo figcaption {
+    font-size: 0.9em;
+    margin-top: 6px;
+}
+
+#kotu h3 {
+    color: red;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+main nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+main nav ul li {
+    border: 1px solid #333;
+    margin-bottom: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+main nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+main nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#tips-detail p {
+    max-width: 42ch;
+    margin: 0 auto 20px;
+    text-align: left;
+    line-height: 1.9;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 16px 20px;
+    border-radius: 6px;
+}
+
+#tips-detail h3 {
+    color: red;
+    text-align: center;
+    margin-bottom: 24px;
+}
